@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Protegernos Html-Css-JS</title>
+</head>
+<body>
+    <header>
+        
+    </header>
+    <main>
+        <section class="sections">
+            <div class="container-title">
+                <div id="nombre">
+                    <h1>María de las Mercedes Rímoli Echarren</h1>
+                </div>
+                <div class="logo">
+                    <img src="./assets/images/protegernosWebColorWhite.svg" alt="">
+                </div>
+            </div>
+        </section>
+    
+        <section class="sections">
+            <div class="others-container-title">
+                <img src="./assets/images/protegernosWebColor.svg" alt="">
+                <input id="searchText" type="search" value="" placeholder="Busque un Profesional" title="Nombre o Profesion">
+                <button onclick="buscarProfesional();" type="submit">Buscar</button>
+            </div>
+            <div class="profesionals-table">
+                <div class="title-table">
+                    <span>Listado de profesionales</span>
+                </div>
+                <div class="header-table">
+                    <div id="row-title">
+                        <!-- se completa con JS -->
+                    </div>
+                </div>
+                <div id="body-table">
+                   <!-- se completa con JS -->
+                </div>
+            </div>
+
+            <button onclick='getPressButton("prev");'>< Prev </button>
+            <button onclick='getPressButton("next");'> Next ></button>
+            
+
+        </section>
+
+   
+        <section class="sections">
+            <div class="others-container-title">
+                <img src="./assets/images/protegernosWebColor.svg" alt="">
+            </div>
+            <div class="contact-form">
+                <form name="fomularioContacto">
+                    <label for="nombreContacto">Ingrese su nombre: </label>
+                    <input type="text" name="nombreContacto" id="nombreContacto" title="Ingresen su nombre y apellido" value="nombre-sarasa" style="width : 500px;">
+                    <br><br>
+                    <label for="correoContacto">Ingrese su email: </label>
+                    <input type="email" name="correoContacto" id="correoContacto" title="Ingresen su correo electrónico" value="correo@sarasa.com" style="width : 520px;">
+                    <br><br>
+                    <label for="comentarioContacto">Ingrese su comentario: </label>
+                    <textarea name="comentarioContacto" id="comentarioContacto" cols="65" rows="10" value="sarasareando un comentario"></textarea>
+                    <button type="submit" onclick="mensajeEnviado();">Enviar el formulario</button>
+                </form>
+            </div> 
+        </section>
+    </main>
+    <footer></footer>
+
+    <script src="./index.js"></script>
+    <script src="./enviar.js"></script>
+</body>
+</html>
